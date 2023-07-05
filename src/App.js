@@ -39,11 +39,13 @@ function App() {
       <main>
         <h1>Character list</h1>
         <hr/>
-        {
-          characters.length > 0 && characters.map(character => (
-          <Characters key={character.id} character={character} />
-          ))
-        }
+        <div className='card-container'>
+          {
+            characters.length > 0 && characters.map(character => (
+            <Characters key={character.id} character={character} />
+            ))
+          }
+        </div>
       </main>
 
       <footer>
